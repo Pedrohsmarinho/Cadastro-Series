@@ -13,11 +13,11 @@ if($data['password'] == $data['password2']){
         try{
             $stmt = $conn->prepare("INSERT INTO users(name, email, password) VALUES (?, ?, ?)");
             $stmt->execute([$data['name'], $data['email'], $data['password']]);
-            header('location: index.php?id=Sucesso');
+            header('location: index.php?');
         }catch(PDOException $e){
             echo $e;
         }
     }else{
-        echo "usuário já cadastrado!";
+        echo "usuário already registered";
     }
 }

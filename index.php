@@ -38,7 +38,7 @@ include_once 'includes/header.php';
               <td><?= $test["seasons"];?></td>
               <td><?= $test["synopsis"];?></td>
             </td>
-              <td>><a href="" class="btn-floating orange"> <i class="material-icons">edit</i></a></td>
+              <td><a href="edit.php?id=<?php echo $test['id']?>" class="btn-floating orange"> <i class="material-icons">edit</i></a></td>
             <td>
               <a href="" class="btn-floating red"> <i class="material-icons">remove</i></a>
               </td>
@@ -48,7 +48,8 @@ include_once 'includes/header.php';
 
         </tbody>
       </table>
-            <a href="addUser.php" class="btn"> Adicionar Série </a>
+            <a href="addUser.php" class="btn">Sing up</a>
+            <a href="login.php" class="btn">Sing on</a>
 <!-- <a class="waves-effect waves-light btn">Adicionar Série</a> -->
 
 

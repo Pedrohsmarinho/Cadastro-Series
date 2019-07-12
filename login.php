@@ -16,7 +16,7 @@ include_once 'includes/header.php';
 				<input type="password" name="passord" id="passord">
 				<label for="passord">passord</label>
 			 </div>
-             <button  type="submit" name="add"class="btn"> Logar</button>
+             <button  type="submit" name="add"class="btn">Sing in</button>
 			 
 
 
